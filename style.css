@@ -1,0 +1,40 @@
+
+html, body {
+    height: 100%;
+  }
+  
+body {
+    background: mediumvioletred;
+    margin: 0;
+    display: flex;
+  
+    /* This centers our sketch horizontally. */
+    justify-content: center;
+  
+    /* This centers our sketch vertically. */
+    align-items: center;
+  }
+
+main{
+    border: 10px outset #7b094a;
+  }
+
+.text{
+    position: absolute;
+    top: 5px;
+    opacity: 0%;
+    color: #dee5e9;
+    font-family: monospace;
+    font-size: 20px;
+    animation: fadeOut ease 10s;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
